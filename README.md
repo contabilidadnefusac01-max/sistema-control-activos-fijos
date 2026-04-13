@@ -1,29 +1,29 @@
 # Sistema de Control de Activos Fijos
 
-## Depreciacion Financiera y Tributaria
+## Depreciación Financiera y Tributaria
 
-Aplicacion web desarrollada con **React + Recharts + TailwindCSS** para la gestion integral de activos fijos, calculo de depreciacion financiera y tributaria, y generacion de asientos contables.
+Aplicación web desarrollada con **React + Vite + Recharts + TailwindCSS** para la gestión integral de activos fijos, cálculo de depreciación financiera y tributaria, y generación de asientos contables.
 
-### Funcionalidades
+## Funcionalidades
 
-- **Dashboard**: Resumen visual con graficos de costo, depreciacion y distribucion por area
-- **Activos**: Vista tabular con busqueda, filtros por cuenta/area, ordenamiento y edicion
-- **Proyeccion**: Proyeccion a 10 anios con multiples metodos de depreciacion (Linea Recta, Doble Saldo Decreciente, Suma de Anios Digitos)
-- **Asientos Contables**: Generacion automatica de asientos por naturaleza y destino (PCGE)
-- **Comparativo**: Analisis de diferencias temporales entre depreciacion financiera y tributaria (NIC 12)
-- **Revaluacion**: Modulo para revaluar activos segun NIC 16
-- **Gestion de Datos**: Agregar activos, exportar CSV, restaurar datos originales
+- **Panel de control**: Resumen visual con gráficos de costo, depreciación y distribución por área.
+- **Activos**: Vista tabular con búsqueda, filtros por cuenta/área, ordenamiento y edición.
+- **Proyección**: Proyección a 10 años con múltiples métodos de depreciación (Línea Recta, Doble Saldo Decreciente, Suma de Años Dígitos).
+- **Asientos Contables**: Generación automática de asientos por naturaleza y destino (PCGE).
+- **Comparativo**: Análisis de diferencias temporales entre depreciación financiera y tributaria (NIC 12).
+- **Revaluación**: Módulo para revaluar activos según NIC 16.
+- **Gestión de Datos**: Agregar activos, exportar CSV, restaurar datos originales.
 
-### Metodos de Depreciacion
+## Métodos de Depreciación
 
-- Linea Recta (LR)
-- Doble Saldo Decreciente (SDD)
-- Suma de Anios Digitos (SYD)
+- Línea Recta (LR)
+- Doble Saldo Decreciente (DSD)
+- Suma de Años Dígitos (SYD)
 - Unidades Producidas (UPR)
 
-### Instalacion
+## Instalación
 
-\`\`\`bash
+```bash
 # Clonar repositorio
 git clone https://github.com/contabilidadnefusac01-max/sistema-control-activos-fijos.git
 cd sistema-control-activos-fijos
@@ -32,32 +32,32 @@ cd sistema-control-activos-fijos
 npm install
 
 # Ejecutar en modo desarrollo
-npm start
-\`\`\`
+npm run dev
+```
 
-### Estructura del Proyecto
+## Estructura del Proyecto
 
-\`\`\`
+```
+App.jsx                 # Componente principal (1,622 activos fijos)
+index.html              # Punto de entrada HTML (Vite)
+vite.config.js          # Configuración de Vite
+tailwind.config.js      # Configuración de TailwindCSS
+postcss.config.js       # Configuración de PostCSS
+package.json            # Dependencias y scripts
 src/
-  App.jsx          # Componente principal con todas las paginas
-  components.jsx   # Componentes UI reutilizables
-  constants.js     # Constantes del sistema (PCGE, areas, cuentas)
-  data.js          # Datos de activos fijos
-  utils.js         # Utilidades (formateadores, storage, calculo depreciacion)
-  index.js         # Punto de entrada React
-public/
-  index.html       # HTML con TailwindCSS CDN
-\`\`\`
+  main.jsx              # Punto de entrada de React
+  index.css             # Estilos con Tailwind
+```
 
-### Tecnologias
+## Tecnologías
 
 - React 18
-- Recharts (graficos)
-- TailwindCSS (estilos)
-- LocalStorage (persistencia de datos)
+- Vite 5
+- Recharts
+- TailwindCSS 3
 
-### Normas Contables
+## Normas Contables
 
-- NIC 16: Propiedad, Planta y Equipo
-- NIC 12: Impuesto a las Ganancias (diferencias temporales)
-- PCGE: Plan Contable General Empresarial
+- NIC 16 - Propiedades, Planta y Equipo
+- NIC 12 - Impuesto a las Ganancias
+- Plan Contable General Empresarial (PCGE)
